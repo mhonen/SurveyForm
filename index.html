@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <body>
+    <h1 id="title">My Survey</h1>
+    <p id="description">Please fill out the following survey form.</p>
+    <form id="survey-form">
+      <label id="name-label">Enter Name:</label>
+      <br></br>
+      <input id="name" type="text" placeholder="John Smith" required/>
+      <br></br>
+      <label id="email-label">Enter email:</label>
+      <br></br>
+      <input id="email" type="email" pattern=".+@example\.com" placeholder="name@google.com"required/>
+      <br></br>
+      <label id="number-label">How many computer devices you own (i.e cell phones, tablets, etc.)</label>
+      <br></br>
+      <input id="number" type="number" min="0" max="100" placeholder="min=0, max=100"/>
+      <br></br>
+      <select id="dropdown">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <br></br>
+      <div>
+        <input name="YesNo" type="radio" value="yes"/>
+        <input name="YesNo" type="radio" value="no"/>
+      </div>
+      <br></br>
+      <div>
+        <input name="TrueFalse" type="radio" value="True"/>
+        <input name="TrueFalse" type="radio" value="False"/>
+      </div>
+      <br></br>
+      <div>
+        <input type="checkbox" value="Good"/>
+        <input type="checkbox" value="bad"/>
+        </div>
+      <br></br>
+      <textarea rows="5" cols="33"></textarea>
+      <br></br>
+      <input id="submit" type="submit"/>
+    </form>
+    </body>
+  </html>
